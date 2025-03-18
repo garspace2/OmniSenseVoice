@@ -48,8 +48,8 @@ lhotse cut simple --force-eager -r benchmark/data/manifests/libritts/libritts_re
     -s benchmark/data/manifests/libritts/libritts_supervisions_dev-clean.jsonl.gz \
     benchmark/data/manifests/libritts/libritts_cuts_dev-clean.jsonl
 
-omnisense benchmark -s -d --num-workers 2 --device-id 0 --batch-size 10 -
--textnorm woitn --language en benchmark/data/manifests/libritts/libritts_cuts_dev-clean.jsonl
+omnisense benchmark -s -d --num-workers 2 --device-id 0 --batch-size 10 \
+--textnorm woitn --language en benchmark/data/manifests/libritts/libritts_cuts_dev-clean.jsonl
 
 omnisense benchmark -s --num-workers 4 --device-id 0 --batch-size 16 --textnorm woitn --language en benchmark/data/manifests/libritts/libritts_cuts_dev-clean.jsonl
 ```
