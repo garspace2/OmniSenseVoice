@@ -41,8 +41,8 @@ Key Options:
 ```
 # LibriTTS
 DIR=benchmark/data
-lhotse download libritts -p dev-clean benchmark/dataLibriTTS
-lhotse prepare libritts -p dev-clean benchmark/data/LibriTTS/LibriTTS benchmark/data/manifests/libritts
+lhotse download libritts -p dev-clean benchmark/data/LibriTTS
+lhotse prepare libritts -p dev-clean benchmark/data/LibriTTS benchmark/data/manifests/libritts
 
 lhotse cut simple --force-eager -r benchmark/data/manifests/libritts/libritts_recordings_dev-clean.jsonl.gz \
     -s benchmark/data/manifests/libritts/libritts_supervisions_dev-clean.jsonl.gz \
